@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainView.Controller">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="522.0">
+         <image>
+            <Image url="@../pet01/Profiles-vert.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="257.0" layoutX="10.0" layoutY="155.0">
+               <image>
+                  <Image url="@../pet01/Ack.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="selectImg" fitHeight="180.0" fitWidth="226.0" layoutX="26.0" layoutY="170.0" pickOnBounds="true" preserveRatio="false" />
+            <VBox layoutX="244.0" layoutY="140.0" prefHeight="288.0" prefWidth="277.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="이  름: " />
+                        <Label fx:id="name" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="나  이: " />
+                        <Label fx:id="age" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="지  역: " />
+                        <Label fx:id="area" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="성  별: " />
+                        <Label fx:id="gender" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="종     : " />
+                        <Label fx:id="species" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="혈  통: " />
+                        <Label fx:id="lineage" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="주인 연락처: " />
+                        <Label fx:id="ph" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label text="보험 가입: " />
+                        <Label fx:id="inocul" text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </VBox>
+            <ImageView fx:id="im2" fitHeight="35.0" fitWidth="100.0" layoutX="207.0" layoutY="429.0" onMouseClicked="#CancleProc1" onMouseEntered="#mouseEntered2" onMouseExited="#mouseExited2">
+               <image>
+                  <Image url="@../pet01/Clo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

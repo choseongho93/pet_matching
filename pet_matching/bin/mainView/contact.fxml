@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="10.0" style="-fx-background-color: #FFEBFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainView.Controller">
+   <children>
+      <AnchorPane prefHeight="438.0" prefWidth="529.0">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="510.0" layoutX="10.0" layoutY="8.0">
+               <image>
+                  <Image url="@../pet01/aa-tile.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="331.0" fitWidth="204.0" layoutX="10.0" layoutY="100.0">
+               <image>
+                  <Image url="@../pet01/230972c2b98f435389b9b17a3c83f92c.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="109.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11월">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <VBox alignment="CENTER" layoutX="222.0" layoutY="100.0" prefHeight="331.0" prefWidth="301.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="최연승: ">
+                           <font>
+                              <Font name="MDotum" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="이진영: " />
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="조성호: " />
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="남기석: " />
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="류세정: " />
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

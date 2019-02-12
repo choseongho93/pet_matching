@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="100.0" spacing="8.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="130.0">
+               <image>
+                  <Image url="@../../pet01/owner.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="580.0" spacing="40.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <TextField fx:id="uId" maxHeight="42.0" prefHeight="42.0" prefWidth="190.0" promptText="아이디를 입력하세요" />
+                        <Button mnemonicParsing="false" onAction="#overlaptest" text="중복확인" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <TextField fx:id="uName" maxHeight="25.0" prefHeight="25.0" prefWidth="190.0" promptText="이름을 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="108.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <PasswordField fx:id="uPw" maxHeight="25.0" prefWidth="190.0" promptText="비밀번호를 입력하세요" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <PasswordField fx:id="uPwc" maxHeight="25.0" prefHeight="25.0" prefWidth="190.0" promptText="비밀번호를 확인해 주세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="110.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <TextField fx:id="uPh" maxHeight="25.0" prefWidth="190.0" promptText="PH를 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Label text="성별" />
+                        <RadioButton fx:id="uMale" mnemonicParsing="false" selected="true" text="남">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="peopleGender" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="uFemale" mnemonicParsing="false" text="여" toggleGroup="$peopleGender" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefWidth="100.0" spacing="8.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="130.0">
+               <image>
+                  <Image url="@../../pet01/ttt.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="108.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dName" prefWidth="190.0" promptText="애견 이름을 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dSpecies" prefWidth="190.0" promptText="견종을 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="108.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dAge" prefWidth="190.0" promptText="나이를 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dLineage" prefWidth="190.0" promptText="혈통을 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="174.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Label text="성별" />
+                        <RadioButton fx:id="dMale" mnemonicParsing="false" selected="true" text="수컷">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="dGender" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="dFemale" mnemonicParsing="false" text="암컷" toggleGroup="$dGender" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dArea" prefWidth="190.0" promptText="지역을 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="170.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Label text="접종 유무" />
+                        <RadioButton fx:id="incY" mnemonicParsing="false" text="유">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="inc" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="incN" mnemonicParsing="false" selected="true" text="무" toggleGroup="$inc" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <TextField fx:id="dMating" prefWidth="190.0" promptText="교배회수를 입력하세요" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="90.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <ImageView fitHeight="178.0" fitWidth="180.0" layoutX="3.0">
+                                 <image>
+                                    <Image url="@../../pet01/036CF24750F652F228.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image" fitHeight="135.0" fitWidth="145.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="false">
+                                 <image>
+                                    <Image url="@../../pet01/noneimage.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Button mnemonicParsing="false" onAction="#OpenFile" text="찾기" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="spNote" prefHeight="127.0" prefWidth="200.0" promptText="내 강아지의 자랑거리나 특이사항을 입력해 주세요" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="455.0" spacing="90.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fx:id="im02" fitHeight="35.0" fitWidth="100.0" onMouseClicked="#useraddT" onMouseEntered="#mouseEntered02" onMouseExited="#mouseExited02">
+                     <image>
+                        <Image url="@../../pet01/ddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="im03" fitHeight="35.0" fitWidth="100.0" onMouseClicked="#CacleProc" onMouseEntered="#mouseEntered03" onMouseExited="#mouseExited03">
+                     <image>
+                        <Image url="@../../pet01/Clo.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="50.0" right="60.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

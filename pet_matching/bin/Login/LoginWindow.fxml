@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Controller">
+   <children>
+      <TextField fx:id="fxID" layoutX="69.0" layoutY="151.0" prefHeight="30.0" prefWidth="235.0" promptText="아이디를 입력하세요" />
+      <PasswordField fx:id="fxPASS" layoutX="68.0" layoutY="209.0" prefHeight="30.0" prefWidth="235.0" promptText="비밀번호를 입력하세요" />
+      <ImageView fx:id="im01" layoutX="319.0" layoutY="143.0" onMouseClicked="#Loginbtn" onMouseEntered="#mouseEntered01" onMouseExited="#mouseExited01">
+         <image>
+            <Image url="@../pet01/login.gif" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="check" layoutX="69.0" layoutY="245.0" mnemonicParsing="false" text="아이디 기억하기">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="69.0" layoutY="136.0" text="아이디" textFill="#6799ff">
+         <font>
+            <Font name="MDotum" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="194.0" text="비밀번호" textFill="#6799ff">
+         <font>
+            <Font name="MDotum" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="108.0" fitWidth="75.0" layoutX="308.0" layoutY="227.0">
+         <image>
+            <Image url="@../pet01/333333333333333.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im02" fitHeight="35.0" fitWidth="120.0" layoutX="93.0" layoutY="347.0" onMouseClicked="#Joinbtn" onMouseEntered="#mouseEntered02" onMouseExited="#mouseExited02">
+         <image>
+            <Image url="@../pet01/mainjoin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im03" fitHeight="35.0" fitWidth="120.0" layoutX="293.0" layoutY="347.0" onMouseClicked="#CacleProc" onMouseEntered="#mouseEntered03" onMouseExited="#mouseExited03">
+         <image>
+            <Image url="@../pet01/Clo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="120.0" layoutX="93.0" layoutY="8.0">
+         <image>
+            <Image url="@../pet01/qwqw.jpg" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="120.0" layoutX="293.0" layoutY="28.0">
+         <image>
+            <Image url="@../pet01/cxcx.jpg" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

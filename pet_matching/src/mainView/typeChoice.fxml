@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="720.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainView.Controller">
+   <children>
+      <ImageView fitHeight="240.0" fitWidth="372.0" layoutX="172.0" layoutY="-64.0">
+         <image>
+            <Image url="@../pet01/type.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="240.0" fitWidth="260.0" layoutX="14.0" layoutY="120.0">
+         <image>
+            <Image url="@../pet01/2257a0a9ffbafb5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="240.0" fitWidth="260.0" layoutX="442.0" layoutY="120.0">
+         <image>
+            <Image url="@../pet01/2257a0a9ffbafb5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="petImage02" fitHeight="200.0" fitWidth="225.0" layoutX="459.0" layoutY="142.0" onMouseClicked="#changePetRight" pickOnBounds="true" preserveRatio="false" />
+      <ImageView fx:id="petImage01" fitHeight="200.0" fitWidth="225.0" layoutX="32.0" layoutY="142.0" onMouseClicked="#changePetLeft" pickOnBounds="true" preserveRatio="false" />
+      <Label fx:id="txtRound" alignment="TOP_CENTER" layoutX="289.0" layoutY="380.0" prefHeight="15.0" prefWidth="46.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="380.0" text="Round">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="128.0" fitWidth="121.0" layoutX="295.0" layoutY="177.0">
+         <image>
+            <Image url="@../pet01/sgvwvewvewvewv.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im2" fitHeight="35.0" fitWidth="100.0" layoutX="442.0" layoutY="458.0" onMouseClicked="#CancleProc1" onMouseEntered="#mouseEntered2" onMouseExited="#mouseExited2">
+         <image>
+            <Image url="@../pet01/Clo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im1" fitHeight="35.0" fitWidth="100.0" layoutX="187.0" layoutY="458.0" onMouseClicked="#start" onMouseEntered="#mouseEntered1" onMouseExited="#mouseExited1">
+         <image>
+            <Image url="@../pet01/Start.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pause" fitHeight="35.0" fitWidth="35.0" layoutX="620.0" layoutY="21.0" onMouseClicked="#Pause" onMouseEntered="#mouseEnterPause" onMouseExited="#mouseExitedPause">
+         <image>
+            <Image url="@../pet01/Pause.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Stop" fitHeight="35.0" fitWidth="35.0" layoutX="667.0" layoutY="21.0" onMouseClicked="#Stop" onMouseEntered="#mouseEnterStop" onMouseExited="#mouseExitedStop">
+         <image>
+            <Image url="@../pet01/Stop.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Play" fitHeight="35.0" fitWidth="35.0" layoutX="572.0" layoutY="21.0" onMouseClicked="#Play" onMouseEntered="#mouseEnterPlay" onMouseExited="#mouseExitedPlay">
+         <image>
+            <Image url="@../pet01/Play.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
